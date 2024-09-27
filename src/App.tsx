@@ -7,7 +7,8 @@ import LayoutAdmin from "./pages/(admin)/layout";
 import DashboardPage from "./pages/(admin)/dashboard/page";
 import NotFoundFage from "./pages/(website)/404/page";
 import ShopPage from "./pages/(website)/shop/page";
-import DetailPage from "./pages/(website)/detail/page";
+import ProductDetailPage from "./pages/(website)/productDetail/page";
+import CartPage from "./pages/(website)/cart/page";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="signup" element={<SignupPage />} />
           <Route path="/shop" element={<ShopPage />} />
-          <Route path="/detail" element={<DetailPage />} />
+          <Route path="/product_detail" element={<ProductDetailPage />} />
+          <Route path="/wishlist" element={<CartPage />} />
         </Route>
 
         <Route path="admin" element={<LayoutAdmin />}>
