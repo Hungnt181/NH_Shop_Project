@@ -9,6 +9,7 @@ import NotFoundFage from "./pages/(website)/404/page";
 import ShopPage from "./pages/(website)/shop/page";
 import ProductDetailPage from "./pages/(website)/productDetail/page";
 import CartPage from "./pages/(website)/cart/page";
+import PaymentPage from "./pages/(website)/payment/page";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/shop" element={<ShopPage />} />
           <Route path="/product_detail" element={<ProductDetailPage />} />
           <Route path="/wishlist" element={<CartPage />} />
+          <Route path="/payment" element={<PaymentPage />} />
         </Route>
 
         <Route path="admin" element={<LayoutAdmin />}>
