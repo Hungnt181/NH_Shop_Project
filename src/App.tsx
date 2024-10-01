@@ -12,6 +12,7 @@ import CartPage from "./pages/(website)/cart/page";
 import PaymentPage from "./pages/(website)/payment/page";
 import ContactPage from "./pages/(website)/contact/page";
 import AboutPage from "./pages/(website)/about/page";
+import AdminProductPage from "./pages/(admin)/products/page";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="admin" element={<LayoutAdmin />}>
           <Route index element={<Navigate to="DashboardPage" />} />
           <Route path="dashboard" element={<DashboardPage />} />
+          <Route path="products" element={<AdminProductPage />} />
         </Route>
 
         <Route path="*" element={<NotFoundFage />} />

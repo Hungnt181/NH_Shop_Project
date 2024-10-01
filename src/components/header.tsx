@@ -41,16 +41,16 @@ const Header = () => {
           </nav>
           <div className="flex  space-x-4 justify-end">
             <Link to="/auth/login">
-              <AiOutlineUser />
+              <AiOutlineUser className="w-[22px] h-[22px]" />
             </Link>
             <Link to="/search">
-              <AiOutlineSearch />
+              <AiOutlineSearch className="w-[22px] h-[22px]" />
             </Link>
             <Link to="/wishlist">
-              <AiOutlineHeart />
+              <AiOutlineHeart className="w-[22px] h-[22px]" />
             </Link>
             <Link to="/wishlist">
-              <AiOutlineShoppingCart />{" "}
+              <AiOutlineShoppingCart className="w-[22px] h-[22px]" />
             </Link>
           </div>
         </div>

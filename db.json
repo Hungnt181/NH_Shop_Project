@@ -1,0 +1,67 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Modern Wooden Chair",
+        "price": 150,
+        "image": "https://example.com/images/product-1.jpg",
+        "description": "A modern wooden chair with ergonomic design."
+      },
+      {
+        "id": 2,
+        "name": "Vintage Leather Sofa",
+        "price": 450,
+        "image": "https://example.com/images/product-2.jpg",
+        "description": "A vintage leather sofa, comfortable and stylish."
+      },
+      {
+        "id": 3,
+        "name": "Glass Coffee Table",
+        "price": 200,
+        "image": "https://example.com/images/product-3.jpg",
+        "description": "A glass coffee table with metal frame."
+      },
+      {
+        "id": 4,
+        "name": "Wooden TV Stand",
+        "price": 300,
+        "image": "https://example.com/images/product-4.jpg",
+        "description": "A wooden TV stand with spacious drawers."
+      },
+      {
+        "id": 5,
+        "name": "Office Desk Set",
+        "price": 400,
+        "image": "https://example.com/images/product-5.jpg",
+        "description": "A modern office desk set with drawers."
+      },
+      {
+        "id": 6,
+        "name": "Metal Dining Chair",
+        "price": 100,
+        "image": "https://example.com/images/product-6.jpg",
+        "description": "A durable metal dining chair."
+      },
+      {
+        "id": 7,
+        "name": "Wooden Bed Frame",
+        "price": 500,
+        "image": "https://example.com/images/product-7.jpg",
+        "description": "A sturdy wooden bed frame with storage."
+      },
+      {
+        "id": 8,
+        "name": "Fabric Recliner Chair",
+        "price": 250,
+        "image": "https://example.com/images/product-8.jpg",
+        "description": "A fabric recliner chair with footrest."
+      },
+      {
+        "id": 9,
+        "name": "Marble Dining Table",
+        "price": 600,
+        "image": "https://example.com/images/product-9.jpg",
+        "description": "A luxurious marble dining table."
+      }
+    ]
+  }
