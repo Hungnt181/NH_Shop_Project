@@ -1,16 +1,21 @@
-import express from "express";
 import cors from "cors";
+import express from "express";
 import mongoose from "mongoose";
+import morgan from "morgan";
 import productRouter from "./routers/product";
-
+import authRouter from "./routers/auth";
+import categoryRouter from "./routers/category";
 const app = express();
-
-app.use(cors());
+// // Middleware
+app.use(cors()); // Cho phép tất cả các nguồn gốc truy cập
+app.use(express.json()); // Chuyển đổi body của request thành JSON
+app.use(morgan("tiny")); // Ghi lại các yêu cầu HTTP
 
 app.use("/api", productRouter);
+app.use("/api", authRouter);
+app.use("/api", categoryRouter);
 
-app.use(express.json());
-
+// Kết nối tới MongoDB
 mongoose.connect("mongodb://127.0.0.1:27017/workshop");
 
 export const viteNodeApp = app;
