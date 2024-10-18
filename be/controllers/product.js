@@ -13,7 +13,7 @@ export const getProductById = async (req, res) => {
   try {
     const { id } = req.params;
     const { _embed } = req.query;
-    let query = Product.findById(id);
+    let query = Product.findById(id).populate(_embed, "category");
 
     if (_embed) {
       const embeds = _embed.split(",");

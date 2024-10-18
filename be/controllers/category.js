@@ -9,31 +9,31 @@ export const createCategory = async (req, res) => {
   }
 };
 
-// export const getCategories = async (req, res) => {
-//   try {
-//     const { _page = 1, _limit = 10, _embed } = req.query;
-//     const options = {
-//       page: parseInt(_page, 10),
-//       limit: parseInt(_limit, 10),
-//     };
+export const getCategories = async (req, res) => {
+  try {
+    const { _page = 1, _limit = 10, _embed } = req.query;
+    const options = {
+      page: parseInt(_page, 10),
+      limit: parseInt(_limit, 10),
+    };
 
-//     let query = Category.find();
+    let query = Category.find();
 
-//     if (_embed) {
-//       const embeds = _embed.split(",");
-//       embeds.forEach((embed) => {
-//         query = query.populate(embed);
-//       });
-//     }
+    if (_embed) {
+      const embeds = _embed.split(",");
+      embeds.forEach((embed) => {
+        query = query.populate(embed);
+      });
+    }
 
-//     const result = await Product.paginate(query, options);
-//     const { docs, ...paginationData } = result; // Loại bỏ trường docs
+    const result = await Product.paginate(query, options);
+    const { docs, ...paginationData } = result; // Loại bỏ trường docs
 
-//     return res.status(200).json({
-//       categories: docs,
-//       ...paginationData,
-//     });
-//   } catch (error) {
-//     return res.status(500).json({ message: error.message });
-//   }
-// };
+    return res.status(200).json({
+      categories: docs,
+      ...paginationData,
+    });
+  } catch (error) {
+    return res.status(500).json({ message: error.message });
+  }
+};
